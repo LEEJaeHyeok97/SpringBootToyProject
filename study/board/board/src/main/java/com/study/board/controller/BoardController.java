@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class BoardController {
 
-    @GetMapping("/") // localhost 8080 역슬래시 경로로 들어 왔을때
-    @ResponseBody // 글자를 띄워주는 어노테이션
-    public String main() {
-        return "Hello World";
+    @GetMapping("/board/write") //어떤 url로 접근할것인지 지정하는 어노테이션 //localhost:8090/board/write
+    public String boardWriteForm() {
+
+        return "boardWrite";
     }
 }
